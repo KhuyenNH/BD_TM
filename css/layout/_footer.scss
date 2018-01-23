@@ -1,0 +1,29 @@
+/* Footer
+-------------------------------------*/
+#footer {
+    color: #327aa2;
+    font-size: 12px;
+    padding: 40px 0 80px;
+    .sms_footer {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+        a {
+            padding: 0 5px;
+        }
+    }
+    .link_footer {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+    .copyright {
+        text-align: center;
+    }
+}
+.toTop {
+    display: none;
+    position: fixed;
+    right: 5%;
+    bottom: 20%;
+}

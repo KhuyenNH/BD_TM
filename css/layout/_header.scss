@@ -1,0 +1,62 @@
+/* Header
+-------------------------------------*/
+#header {
+    // @extend %clearfix;
+    // >* {
+    //     float: left;
+    // }
+    // margin: auto;
+    // float: right;
+    // width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    font-size: 13px;
+    line-height: 1.5;
+    .logo {
+        width: 25.5%;
+        padding: 10px 11px;
+        display: flex;
+        align-items: center;
+    }
+    .nav_header {
+        width: 74.5%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav_main {
+        width: 70%;
+        // width: 602px;
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-end;
+        padding-right: 10px;
+        .items_nav {
+            display: inherit;
+            align-items: center;
+            padding-right: 20px;
+        }
+    }
+    .nav_btn {
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        .items_nav {
+            justify-content: center;
+            display: flex;
+            width: 33.3333333%;
+            align-items: center;
+            color: $color-a;
+            padding: 0 15px;
+        }
+        .orange {
+            background: $orange_bg;
+        }
+        .blue {
+            background: $blue_bg;
+        }
+        .cyan {
+            background: $cyan_bg;
+        }
+    }
+}
