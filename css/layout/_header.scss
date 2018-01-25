@@ -14,19 +14,20 @@
     font-size: 13px;
     line-height: 1.5;
     .logo {
-        width: 25.5%;
-        padding: 10px 11px;
+        width: 240px;
+        // width: 25.5%;
+        padding: 10px 10px;
         display: flex;
         align-items: center;
     }
     .nav_header {
-        width: 74.5%;
+        // width: 74.5%;
+        width: calc(100% - 240px);
         display: flex;
         flex-wrap: wrap;
     }
     .nav_main {
-        width: 70%;
-        // width: 602px;
+        width: calc(100% - 314px);
         display: flex;
         align-items: stretch;
         justify-content: flex-end;
@@ -38,16 +39,17 @@
         }
     }
     .nav_btn {
-        width: 30%;
+        width: 314px;
         display: flex;
         flex-wrap: wrap;
         .items_nav {
-            justify-content: center;
-            display: flex;
+            white-space: nowrap;
+            padding: 0 5px;
             width: 33.3333333%;
-            align-items: center;
             color: $color-a;
-            padding: 0 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .orange {
             background: $orange_bg;
@@ -58,5 +60,11 @@
         .cyan {
             background: $cyan_bg;
         }
+    }
+    #btn_toggle {
+        display: none;
+    }
+    .items_btn_nav {
+        display: none;
     }
 }

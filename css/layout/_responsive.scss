@@ -1,3 +1,6 @@
+/*-----------------------
+        Responsive for device
+-----------------------------------------*/
 @media screen and (max-width: 1280px) {
     .container {
         padding-left: 15px;
@@ -6,14 +9,25 @@
     .wrapper {
         min-width: inherit;
     }
-    #local_01 {
-        .video_main {
-            height: 750px;
+    #header {
+        .nav_main {
+            width: 66%;
         }
+        .nav_btn {
+            width: 34%;
+        }
+    }
+    #local_01 {
         .description_main {
-            width: 70%;
+            // width: 70%;
             margin: auto;
             img {
+            }
+        }
+        .btn_main_poster {
+            a {
+                width: 20vw;
+                height: 20vw;
             }
         }
     }
@@ -23,28 +37,100 @@
         }
     }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1200px) {
+
     #header {
+        font-size: 3.5vw;
+        &.active {
+            background: #2698e1;
+        }
+        .logo {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .nav_header {
+            display: none;
+            width: 100%;
+        }
         .nav_main {
+            // font-size: 4.8vw;
+            font-size: 24px;
+            color: $color-a;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 7vw 0 5vw 0;
             padding-right: 0;
+            font-weight: bold;
             .items_nav {
+                display: block;
+                width: 100%;
+                padding-right: 0;
+                align-items: baseline;
+            }
+        }
+        .items_nav {
+            a {
+                padding: 16px;
+                display: block;
+                text-align: center;
             }
         }
         .nav_btn {
-            .items_nav {
-                padding: 5px 10px;
+            display: none;
+        }
+        .items_btn_nav {
+            width: 90%;
+            margin: auto;
+        }
+        .items_btn_nav {
+            display: block;
+            .sms_footer {
+                display: flex;
+                justify-content: center;
+                a {
+                    margin: 20px 10px 30px;
+                }
+            }
+        }
+        #btn_toggle {
+            display: block;
+            width: 45px;
+            height: 35px;
+            span {
+                transition: 400ms;
+                display: block;
+                background: $blue_bg;
+                height: 5px;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            &.active {
+                span {
+                    background: $color-a;
+                    &:first-child {
+                        transform: translateY(15px) rotate(-45deg);
+                    }
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+                    &:last-child {
+                        transform: translateY(-14px) rotate(45deg);
+                    }
+                }
             }
         }
     }
-    #local_01 {
-        .video_main {
-            height: inherit;
-        }
-    }
 }
-/*-----------------------
-        Responsive for device < 767px
------------------------------------------*/
+// @media screen and (min-width: 670px) and (max-width: 767px) {
+//     #local_01 {
+//         .description_main {
+//             padding: 4% 12% !important;
+//         }
+//     }
+// }
+
 @media screen and (max-width: 767px) {
     .is_pc {
         display: none;
@@ -68,57 +154,26 @@
         }
     }
     .text {
-        font-size: 3.5vw;
+        font-size: 3.7vw;
     }
 
     .btn {
-        width: 100%;
+        max-width: 100%;
         margin-top: 20px;
+        img {
+            width: 100%;
+        }
         .btn_small {
-            padding-top: 10px;
+            padding-top: 20px;
             a {
                 display: block;
-                width: 48%;
-            }
-        }
-    }
-    #header {
-        font-size: 3.5vw;
-        .logo {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .nav_header {
-            display: none;
-            width: 100%;
-        }
-        .nav_main {
-            flex-wrap: wrap;
-            width: 100%;
-            padding-right: 0;
-            .items_nav {
-                display: block;
-                width: 100%;
-                padding-right: 0;
-                align-items: baseline;
-                border-top: 1px solid #dfdede;
-            }
-        }
-        .items_nav {
-            a {
-                padding: 3vw;
-                display: block;
-                text-align: center;
-            }
-        }
-        .nav_btn {
-            width: 100%;
-            text-align: center;
-            .items_nav {
-                padding: 3vw;
-                // width: 100%;
+                width: 50%;
+                &:first-child {
+                    padding-right: 5px;
+                }
+                &:last-child {
+                    padding-left: 5px;
+                }
             }
         }
     }
@@ -128,20 +183,72 @@
             height: inherit;
         }
         .sms_main {
-            right: 5px;
+            left: 0;
+            right: 0;
             bottom: 5px;
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             a {
-                padding-left: 5px;
-                display: inline-block;
-                width: 40%;
+                margin: 0 5px;
+            //     padding-left: 5px;
+            //     display: inline-block;
+            //     width: 40%;
+            }
+        }
+        .description_main {
+            // padding: 8%;
+        }
+        .text_visual_main {
+            max-width: 85%;
+            h2 {
+                font-size: 9vw;
+            }
+            h5 {
+                padding: 10px 30px;
+                font-size: 4vw;
+                margin-bottom: 3vw;
+            }
+            h3 {
+                font-size: 3.7vw;
+                line-height: 1.5;
+                padding-bottom: 20px;
+            }
+            .fs_40_sp {
+                font-size: 5.3vw;
+                display: block;
+                padding-bottom: 3vw;
+            }
+        }
+        .btn_main_poster {
+            display: flex;
+            max-width: 100%;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin-top: 5%;
+            a {
+                font-size: 5.3vw;
+                display: block;
+                width: 100%;
+                height: inherit;
+                padding: 15px;
+                margin-bottom: 3%;
+                border: 1px solid $color-a;
+                border-radius: 50px;
+                &:after {
+                    display: none;
+                }
+            }
+            .fs_20 {
+                font-size: 5.3vw;
             }
         }
     }
     /*------------- local_02 -------------*/
     #local_02 {
         padding: 10vw 0;
+        .text {
+            text-align: justify;
+        }
         .list_thumbnail {
             padding-top: 10vw;
             flex-wrap: wrap;
@@ -166,7 +273,7 @@
         padding: 10vw 0;
         .thumbnail {
             text-align: center;
-            width: 50%;
+            width: 20%;
             margin: auto;
             padding-left: 0;
         }
@@ -241,6 +348,9 @@
         }
         .thumbnail {
             width: 100%;
+            img {
+                width: 100%;
+            }
         }
         .description {
             padding-top: 30px;
@@ -269,7 +379,8 @@
         }
         .title_description {
             &:after {
-                top: 33px;
+                // top: 33px;
+                top: 75%;
                 right: 5px;
                 width: 30px;
                 height: 46px;
@@ -322,6 +433,9 @@
     /*------------- local_09 -------------*/
     #local_09 {
         padding: 10vw 0;
+        img {
+            width: 100%;
+        }
         .container {
             &:before {
                 top: -1%;
@@ -341,9 +455,13 @@
                 padding-top: 0;
             }
         }
+        .map_google {
+            width: 100%;
+        }
         .thumbnail {
             padding-top: 20px;
             width: 100%;
+            padding-left: 0;
         }
     }
     /*------------- local_10 -------------*/
@@ -375,9 +493,6 @@
                 width: 55%;
             }
         }
-    }
-    #local_05, #local_07, #local_09 {
-        background-attachment: inherit;
     }
     /*------------- Footer -------------*/
     #footer {

@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
@@ -11,36 +10,63 @@
 </head>
 
 <body>
-	<div class="wrapper">
+    <div class="wrapper">
         <header id="header">
             <div class="logo">
                 <a href=""><img src="images/logo.png" alt="CareeaSupportcollegeITエンジニアの転職サポート"></a>
-                <a href="" class="is_sp" id="btn_toggle"><img src="images/btn_toggle.png" alt=""></a>
+                <!-- <div class="is_sp"> -->
+                    <a href="" id="btn_toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                <!-- </div> -->
             </div>
             <div class="nav_header">
                 <nav class="nav_main">
-                    <div class="items_nav"><a href="">選ばれる理由</a></div>
-                    <div class="items_nav"><a href="">適正に合わせた指導</a></div>
-                    <div class="items_nav"><a href="">お仕事までの流れ</a></div>
-                    <div class="items_nav"><a href="">コース内容</a></div>
-                    <div class="items_nav"><a href="">卒業生の声</a></div>
-                    <div class="items_nav"><a href="">アクセス</a></div>
+                    <div class="items_nav"><a href="#local_02">選ばれる理由</a></div>
+                    <div class="items_nav"><a href="#local_10">適正に合わせた指導</a></div>
+                    <div class="items_nav"><a href="#local_05">お仕事までの流れ</a></div>
+                    <div class="items_nav"><a href="#local_06">コース内容</a></div>
+                    <div class="items_nav"><a href="#local_07">卒業生の声</a></div>
+                    <div class="items_nav"><a href="#local_09">アクセス</a></div>
+                    <div class="items_btn_nav is_sp">
+                        <div class="btn">
+                            <a href="" class="btn_01"><img src="images/btn_big_01.png" alt="オーディション説明会"></a>
+                            <div class="btn_small">
+                                <a href="" class="btn_02"><img src="images/btn_small_01.png" alt="イベント詳細"></a>
+                                <a href="" class="btn_03"><img src="images/btn_small_02.png" alt="個別説明会の申込み"></a>
+                            </div>
+                        </div>
+                        <div class="sms_footer">
+                            <a href="" class="fb_icon"><img src="images/fb_icon.png" alt=""></a>
+                            <a href="" class="tw_icon"><img src="images/tw_icon.png" alt=""></a>
+                        </div>
+                    </div>
                 </nav>
                 <nav class="nav_btn">
+                    <a href="" class="items_nav cyan">資料請求</a>
                     <a href="" class="items_nav orange">オーディション<br class="is_pc">説明会</a>
                     <a href="" class="items_nav blue">個別説明会の<br class="is_pc">申し込み</a>
-                    <a href="" class="items_nav cyan">資料請求</a>
                 </nav>
             </div>
         </header>
         <div class="page-main">
             <div id="local_01">
-                <video class="video_main" poster="images/bg_main_visual.jpg">
-                   <!-- <source src="movie.mp4" type="video/mp4">
-                   <source src="movie.ogg" type="video/ogg"> -->
+                <video class="video_main" autoplay loop muted poster="images/bg_main_visual.jpg">
+                   <source src="video/main2.mp4" type="video/mp4">
                 </video>
                 <div class="description_main">
-                    <img src="images/descript_main.png" alt="フリーター・既卒・第二新卒向け未経験者でも、お給料をもらいながらITスキルを学べる！あなたのITエンジニアのキャリアをサポート無料で勉強できる未経験OK（未経験者80％以上）大手企業での実績が積める">
+                    <div class="text_visual_main">
+                        <h5>フリーター・既卒・第二新卒向け</h5>
+                        <h3>未経験者でも、お給料をもらいながら<br class="is_sp">ITスキルを学べる！</h3>
+                        <h2><span class="fs_40_sp">あなたの</span>ITエンジニアの<br>キャリアをサポート</h2>
+                    </div>
+                    <div class="btn_main_poster">
+                        <a href="#local_02">無料<span class="fs_20">で<br class="is_pc">勉強できる</span></a>
+                        <a href="">未経験<span class="fs_20">OK</span><br class="is_pc"><span class="fs_16">（未経験者80％以上）</a>
+                        <a href="">大手企業<span class="fs_20">での<br class="is_pc">実績が積める</span></a>
+                    </div>
                 </div>
                 <div class="sms_main">
                     <a href="" class="fb_icon"><img src="images/fb_icon.png" alt=""></a>
@@ -52,22 +78,31 @@
                 <div class="container">
                     <h2 class="title_h2">選ばれる3つの理由</h2>
                     <p class="text">IT未経験の方でも大丈夫。現場で活躍するプロが基礎から丁寧に指導します。
-                        <br>基本的な研修をクリアできたら、引き続きプロジェクト現場で技術フォローを受けつつ、
-                        <br>開発チームで戦力として活躍してもらい、さらにスキルを磨いていけます。
-                        <br>就職先企業から厚い信頼を得ているので、研修期間中でも給与が頂ける環境を用意できています。
+                        <br class="is_pc">基本的な研修をクリアできたら、引き続きプロジェクト現場で技術フォローを受けつつ、
+                        <br class="is_pc">開発チームで戦力として活躍してもらい、さらにスキルを磨いていけます。
+                        <br class="is_pc">就職先企業から厚い信頼を得ているので、研修期間中でも給与が頂ける環境を用意できています。
                     </p>
                     <ul class="list_thumbnail">
                         <li class="items">
-                            <div class="thumbnail"><img src="images/thumb_01.png" alt="受講料は無料！（20万円相当)"></div>
+                            <div class="thumbnail">
+                                <img src="images/thumb_01.png" alt="受講料は無料！（20万円相当)">
+                                <h4 class="title_h4">受講料は無料！<br>(20万円相当)</h4>
+                            </div>
                             <p class="text">ITエンジニアの登竜門でもある「LPZC」資格取得講座は、一般的に20～30万円ほどの受講料がかかりますが、当プログラムでは無料で受講できます。</p>
                         </li>
                         <li class="items">
-                            <div class="thumbnail"><img src="images/thumb_02.png" alt="未経験からスタートOK！"></div>
-                            <p class="text">ITエンジニアの登竜門でもある「LPZC」資格取得講座は、一般的に20～30万円ほどの受講料がかかりますが、当プログラムでは無料で受講できます。</p>
+                            <div class="thumbnail">
+                                <img src="images/thumb_02.png" alt="未経験からスタートOK！">
+                                <h4 class="title_h4">未経験から<br>スタートOK！</h4>
+                            </div>
+                            <p class="text">IT未経験の方でも、研修で基礎からしっかり身に着けてもらえます。<br>その後、プロジェクトで戦力になってもらいつつ、スキルを磨いていけるので、より早く成長することが可能です。</p>
                         </li>
                         <li class="items">
-                            <div class="thumbnail"><img src="images/thumb_03.png" alt="大手企業で実績を積むチャンスも！"></div>
-                            <p class="text">ITエンジニアの登竜門でもある「LPZC」資格取得講座は、一般的に20～30万円ほどの受講料がかかりますが、当プログラムでは無料で受講できます。</p>
+                            <div class="thumbnail">
+                                <img src="images/thumb_03.png" alt="大手企業で実績を積むチャンスも！">
+                                <h4 class="title_h4">大手企業で<br>実績を積むチャンスも！</h4>
+                            </div>
+                            <p class="text">大手金融機関や大手商社などの長年の開発実績があり、資格取得後は大手企業でのプロジェクトで実績を積むことができ、さらなるキャリアアップのチャンスもあります。</p>
                         </li>
                     </ul>
                 </div>
@@ -100,74 +135,76 @@
             </div>
             <!-- /local_04 -->
             <div id="local_05">
-                <div class="container">
-                    <h2 class="title_h2">お仕事までの流れ</h2>
-                    <ul class="listItems listThumb">
-                        <li class="items">
-                            <div class="thumbnail">
-                                <img src="images/thumb_05.png" alt="">
-                            </div>
-                            <div class="detail_thumb is_sp">
-                                <h4 class="title_h4">個別説明会</h4>
-                                <p class="text">個別説明会で、キャリアサポートカレッジの内容や、就職サポートについて説明いたします。</p>
-                            </div>
-                        </li>
-                        <li class="items">
-                            <div class="thumbnail">
-                                <img src="images/thumb_06.png" alt="">
-                            </div>
-                            <div class="detail_thumb is_sp">
-                                <h4 class="title_h4">オーディションの実施</h4>
-                                <p class="text">個別説明会で、キャリアサポートカレッジの内容や、就職サポートについて説明いたします。</p>
-                            </div>
-                        </li>
-                        <li class="items">
-                            <div class="thumbnail">
-                                <img src="images/thumb_07.png" alt="">
-                            </div>
-                            <div class="detail_thumb is_sp">
-                                <h4 class="title_h4">研修スタート</h4>
-                                <p class="text">個別説明会で、キャリアサポートカレッジの内容や、就職サポートについて説明いたします。</p>
-                            </div>
-                        </li>
-                        <li class="items">
-                            <div class="thumbnail">
-                                <img src="images/thumb_08.png" alt="">
-                            </div>
-                            <div class="detail_thumb is_sp">
-                                <h4 class="title_h4">キャリアアップ</h4>
-                                <p class="text">個別説明会で、キャリアサポートカレッジの内容や、就職サポートについて説明いたします。</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- /items thumbnail -->
-                    <ul class="listItems">
-                        <li class="items">
-                            <div class="detail_thumb is_pc">
-                                <h4 class="title_h4">個別説明会</h4>
-                                <p class="text">個別説明会で、キャリアサポートカレッジの内容や、就職サポートについて説明いたします。</p>
-                            </div>
-                        </li>
-                        <li class="items">
-                            <div class="detail_thumb is_pc">
-                                <h4 class="title_h4">オーディションの実施</h4>
-                                <p class="text">個別説明会で、キャリアサポートカレッジの内容や、就職サポートについて説明いたします。</p>
-                            </div>
-                        </li>
-                        <li class="items">
-                            <div class="detail_thumb is_pc">
-                                <h4 class="title_h4">研修スタート</h4>
-                                <p class="text">個別説明会で、キャリアサポートカレッジの内容や、就職サポートについて説明いたします。</p>
-                            </div>
-                        </li>
-                        <li class="items">
-                            <div class="detail_thumb is_pc">
-                                <h4 class="title_h4">キャリアアップ</h4>
-                                <p class="text">個別説明会で、キャリアサポートカレッジの内容や、就職サポートについて説明いたします。</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- /items description -->
+                <div id="background_poly_01">
+                    <div class="container">
+                        <h2 class="title_h2">お仕事までの流れ</h2>
+                        <ul class="listItems listThumb">
+                            <li class="items">
+                                <div class="thumbnail">
+                                    <img src="images/thumb_05.png" alt="">
+                                </div>
+                                <div class="detail_thumb is_sp">
+                                    <h4 class="title_h4">個別説明会</h4>
+                                    <p class="text">個別説明会で、キャリアサポートカレッジの内容や、就職サポートについて説明いたします。</p>
+                                </div>
+                            </li>
+                            <li class="items">
+                                <div class="thumbnail">
+                                    <img src="images/thumb_06.png" alt="">
+                                </div>
+                                <div class="detail_thumb is_sp">
+                                    <h4 class="title_h4">オーディションの実施</h4>
+                                    <p class="text">あなたの適性や、ご希望のキャリアプランに合った企業様をオーディション形式で選定いただきます。</p>
+                                </div>
+                            </li>
+                            <li class="items">
+                                <div class="thumbnail">
+                                    <img src="images/thumb_07.png" alt="">
+                                </div>
+                                <div class="detail_thumb is_sp">
+                                    <h4 class="title_h4">研修スタート</h4>
+                                    <p class="text">申し込み企業様での選考・面接をクリアすると、ご入社頂いてIT研修がスタートします。研修期間中にもお給料が支給されます。</p>
+                                </div>
+                            </li>
+                            <li class="items">
+                                <div class="thumbnail">
+                                    <img src="images/thumb_08.png" alt="">
+                                </div>
+                                <div class="detail_thumb is_sp">
+                                    <h4 class="title_h4">キャリアアップ</h4>
+                                    <p class="text">配属先で経験を積んでいただき、将来的にご自身の望むポジションでご活躍いただけるよう、スキルアップに励んでください。</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- /items thumbnail -->
+                        <ul class="listItems">
+                            <li class="items">
+                                <div class="detail_thumb is_pc">
+                                    <h4 class="title_h4">個別説明会</h4>
+                                    <p class="text">個別説明会で、キャリアサポートカレッジの内容や、就職サポートについて説明いたします。</p>
+                                </div>
+                            </li>
+                            <li class="items">
+                                <div class="detail_thumb is_pc">
+                                    <h4 class="title_h4">オーディションの実施</h4>
+                                    <p class="text">個別説明会で、キャリアサポートカレッジの内容や、就職サポートについて説明いたします。</p>
+                                </div>
+                            </li>
+                            <li class="items">
+                                <div class="detail_thumb is_pc">
+                                    <h4 class="title_h4">研修スタート</h4>
+                                    <p class="text">個別説明会で、キャリアサポートカレッジの内容や、就職サポートについて説明いたします。</p>
+                                </div>
+                            </li>
+                            <li class="items">
+                                <div class="detail_thumb is_pc">
+                                    <h4 class="title_h4">キャリアアップ</h4>
+                                    <p class="text">個別説明会で、キャリアサポートカレッジの内容や、就職サポートについて説明いたします。</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- /items description -->
+                    </div>
                 </div>
             </div>
             <!-- /local_05 -->
@@ -207,93 +244,194 @@
             </div>
             <!-- /local_06 -->
             <div id="local_07">
-                <div class="container">
-                    <h2 class="title_h2">卒業生の声</h2>
-                    <ul class="listItems">
-                        <li class="items">
-                            <div class="avatar"><img src="images/avatar_01.png" alt=""></div>
-                            <div class="description">
-                                <div class="title_description">
-                                    <h3 class="title_h3">市役所<img src="images/arrow_text.png" alt="">ネットワークエンジニア</h3>
-                                    <h5>G.Kさん（29歳 / 男性）</h5>
+                <div id="background_poly_02">
+                    <div class="container">
+                        <h2 class="title_h2">卒業生の声</h2>
+                        <ul class="listItems">
+                            <li class="items">
+                                <div class="avatar"><img src="images/avatar_01.png" alt=""></div>
+                                <div class="description">
+                                    <div class="title_description">
+                                        <h3 class="title_h3">市役所からネットワークエンジニアへ</h3>
+                                        <h5>G.Kさん（29歳 / 男性）</h5>
+                                    </div>
+                                    <p class="text">前職では市役所でHP管理とシステム監視をしていました。<br>趣味が高じてサーバー構築等興味を持ち、勉強した結果、LPICレベル1・レベル2、ITILファンデーション、CCNA、OSS-DBsilverを取得。<br>今では某SIにて設計業務、ネットワーク障害対応等を行っています。</p>
                                 </div>
-                                <p class="text">前職では市役所でHP管理とシステム監視をしていました。<br>趣味が高じてサーバー構築等興味を持ち、勉強した結果、LPICレベル1・レベル2、ITILファンデーション、CCNA、OSS-DBsilverを取得。今では某SIにて設計業務、ネットワーク障害対応等を行っています。</p>
-                            </div>
-                        </li>
-                        <!-- /items -->
-                        <li class="items">
-                            <div class="avatar"><img src="images/avatar_01.png" alt=""></div>
-                            <div class="description">
-                                <div class="title_description">
-                                    <h3 class="title_h3">飲食業<img src="images/arrow_text.png" alt="">ヘルプデスク</h3>
-                                    <h5>K.Tさん（28歳 / 男性）</h5>
+                            </li>
+                            <!-- /items -->
+                            <li class="items">
+                                <div class="avatar"><img src="images/avatar_01.png" alt=""></div>
+                                <div class="description">
+                                    <div class="title_description">
+                                        <h3 class="title_h3">飲食業からヘルプデスクへ</h3>
+                                        <h5>K.Tさん（28歳 / 男性）</h5>
+                                    </div>
+                                    <p class="text">前職はフードサービス業の企画・運営から自動車販売営業を経て、ITエンジニアへ転身。<br>現在、大手企業でヘルプデスク業務を行いながら、LPICレベル1を目指して勉強中です。</p>
                                 </div>
-                                <p class="text">前職はフードサービス業の企画・運営から自動車販売営業を経て、ITエンジニアへ転身。現在、大手企業でヘルプデスク業務を行いながら、LPICレベル1を目指して勉強中です。</p>
-                            </div>
-                        </li>
-                        <!-- /items -->
-                    </ul>
+                            </li>
+                            <!-- /items -->
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- /local_07 -->
             <div id="local_08">
                 <div class="container_box">
                     <h2 class="title_h2">よくあるご質問</h2>
-                    <ul class="listChat">
-                        <li class="items user_right">
-                            <p class="description_chat">
-                                IT業界未経験なのですが…。
-                            </p>
-                        </li>
-                        <li class="items user_left">
-                            <p class="description_chat">
-                                大丈夫です！
-                                <br>プログラミング完全未経験でも基礎から丁寧にサポートするため、
-                                <br>他業種から受講した卒業生も見事ITエンジニアに転身し、活躍しております。他業種から受講した卒業生も見事ITエンジニアに転身し、活躍しております。
-                            </p>
-                        </li>
-                        <!-- /end 2 user -->
-                        <li class="items user_right">
-                            <p class="description_chat">
-                                応募条件はありますか？
-                            </p>
-                        </li>
-                        <li class="items user_left">
-                            <p class="description_chat">
-                                年齢条件として、20歳〜35歳までとさせていただいています。
-                                <br>また、日本国籍をお持ちの方を対象とさせていただいています。
-                            </p>
-                        </li>
-                        <!-- /end 2 user -->
-                        <li class="items user_right">
-                            <p class="description_chat">
-                                受講期間の目安を教えてください。
-                            </p>
-                        </li>
-                        <li class="items user_left">
-                            <p class="description_chat">
-                                1か月程の受講で実務レベルのITスキルが身に付きます。
-                            </p>
-                        </li>
-                        <!-- /end 2 user -->
-                    </ul>
+                    <div class="listChat">
+                        <div class="row_chat">
+                            <div class="items user_right">
+                                <p class="description_chat">
+                                    IT業界未経験なのですが…。
+                                </p>
+                            </div>
+                            <div class="items user_left">
+                                <p class="description_chat">
+                                    大丈夫です！<br>プログラミング完全未経験でも基礎から丁寧にサポートするため、他業種から受講した卒業生も見事ITエンジニアに転身し、活躍しております。
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /row_chat -->
+                        <div class="row_chat">
+                            <div class="items user_right">
+                                <p class="description_chat">
+                                    応募条件はありますか？
+                                </p>
+                            </div>
+                            <div class="items user_left">
+                                <p class="description_chat">
+                                    年齢条件として、20歳〜35歳までとさせていただいています。<br>また、日本国籍をお持ちの方を対象とさせていただいています。
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /row_chat -->
+                        <div class="row_chat">
+                            <div class="items user_right">
+                                <p class="description_chat">
+                                    受講期間の目安を教えてください。
+                                </p>
+                            </div>
+                            <div class="items user_left">
+                                <p class="description_chat">
+                                    1か月程の受講で実務レベルのITスキルが身に付きます。
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /row_chat -->
+                        <div class="box_chat_more">
+                            <div class="row_chat">
+                                <div class="items user_right">
+                                    <p class="description_chat">
+                                        受講できる曜日を教えてください。
+                                    </p>
+                                </div>
+                                <div class="items user_left">
+                                    <p class="description_chat">
+                                        火曜日～土曜日の10:00～18:00の受講となります。<br>※日曜日・祝日は休講です。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- /row_chat -->
+                            <div class="row_chat">
+                                <div class="items user_right">
+                                    <p class="description_chat">
+                                        どのコースを選べばいいかわかりません。
+                                    </p>
+                                </div>
+                                <div class="items user_left">
+                                    <p class="description_chat">
+                                        初めにヒアリングをさせて頂き、適性などを考慮した上で、あなたにぴったりのコースをご案内致します。<br>お気軽にご相談ください。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- /row_chat -->
+                            <div class="row_chat">
+                                <div class="items user_right">
+                                    <p class="description_chat">
+                                        パソコンの購入は必要ですか？
+                                    </p>
+                                </div>
+                                <div class="items user_left">
+                                    <p class="description_chat">
+                                        研修で使用するパソコンは当社で用意させて頂きます。
+
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- /row_chat -->
+                            <div class="row_chat">
+                                <div class="items user_right">
+                                    <p class="description_chat">
+                                        パソコンは持ち帰れますか？
+                                    </p>
+                                </div>
+                                <div class="items user_left">
+                                    <p class="description_chat">
+                                        パソコンの持ち帰りは、原則的にお断りしております。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- /row_chat -->
+                            <div class="row_chat">
+                                <div class="items user_right">
+                                    <p class="description_chat">
+                                        どのような人が通っていますか？
+                                    </p>
+                                </div>
+                                <div class="items user_left">
+                                    <p class="description_chat">
+                                        フリーター・既卒・第二新卒など、他業種からの転職を考えている人が通っており、プログラミング完全未経験の方も多くいらっしゃいます。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- /row_chat -->
+                            <div class="row_chat">
+                                <div class="items user_right">
+                                    <p class="description_chat">
+                                        オーディションでの服装の指定はありますか。
+                                    </p>
+                                </div>
+                                <div class="items user_left">
+                                    <p class="description_chat">
+                                        222222キャリアサポートカレッジでのオーディションは、服装は自由となっています。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- /row_chat -->
+                            <div class="row_chat">
+                                <div class="items user_right">
+                                    <p class="description_chat">
+                                        資格を取得したいのですが。
+                                    </p>
+                                </div>
+                                <div class="items user_left">
+                                    <p class="description_chat">
+                                        まずは、未経験の方でもITエンジニアに転身可能なスキルを身に付けることを目標としたカリキュラム構成となっていますが、資格取得が可能なコースもございます。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- /row_chat -->
+                        </div>
+                    </div>
                     <div class="btn_more"><a href=""><img src="images/btn_big_02.png" alt=""></a></div>
                 </div>
             </div>
             <!-- /local_08 -->
             <div id="local_09">
-                <div class="container">
-                    <h2 class="title_h2">アクセス</h2>
-                    <div class="content_map">
-                        <div class="description">
-                            <p>〒150-0002<br>東京都渋谷区渋谷1-9-8朝日生命宮益坂ビル7階</p>
-                            <p>JR山手線・銀座線・半蔵門線・副都心線「渋谷駅」徒歩5分<br>※2018年1月にオフィス移転しました。</p>
-                            <div class="img_map">
-                                <img src="images/img_avatar_map.png" alt="">
+                <div id="background_poly_03">
+                    <div class="container">
+                        <h2 class="title_h2">アクセス</h2>
+                        <div class="content_map">
+                            <div class="description">
+                                <p>〒150-0002<br>東京都渋谷区渋谷1-9-8朝日生命宮益坂ビル7階</p>
+                                <p>JR山手線・銀座線・半蔵門線・副都心線「渋谷駅」徒歩5分<br>※2018年1月にオフィス移転しました。</p>
+                                <div class="img_map">
+                                    <img src="images/img_avatar_map.png" alt="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="thumbnail">
-                            <img src="images/map.png" alt="">
+                            <div class="thumbnail">
+                                <iframe class="map_google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6845311556335!2d139.702490065574!3d35.6601433387349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b586ea889bd%3A0xd96f286dbce196b1!2z5qCq5byP5Lya56S-44ON44OD44OI44K144Od44O844OI!5e0!3m2!1svi!2s!4v1516786953673" frameborder="0" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -307,6 +445,7 @@
                     <div class="description">
                         <h3 class="title_h3">適性に合わせた指導</h3>
                         <p class="text">あなたの目指すポジション・キャリアをヒアリングし、<br>適性に合わせたキャリアプランや指導コースをご提案します。</p>
+                        <p class="text">詳細は「オーディション説明会」および「個別説明会」でご説明いたしますので、<br>お気軽にお申込みください。</p>
                         <div class="btn">
                             <a href="" class="btn_01"><img src="images/btn_big_03.png" alt="資料請求"></a>
                             <div class="btn_small">
@@ -316,7 +455,9 @@
                         </div>
                         <div class="description_contact">
                             <p class="text">お電話でのお問合せ</p>
-                            <a href="tel:03-000-0000" class="tel"><img src="images/contact.png" alt="03-000-0000火曜日 ~ 土曜日 10:00~18:00（ 日・祝休）"></a>
+                            <a href="tel:03-000-0000" class="tel">
+                                <span class="number_phone"><img src="images/phone_icon.png" alt="">03-000-0000</span>
+                                火曜日 ~ 土曜日 10:00~18:00 ( 日・祝休)
                         </div>
                     </div>
                 </div>
@@ -330,16 +471,16 @@
                     <a href="" class="tw_icon"><img src="images/tw_icon_02.png" alt=""></a>
                 </div>
                 <div class="link_footer">
-                    <a href="">運営会社</a>
-                    <a href="">ネットサポート</a>
+                    <a href="http://www.n-support.jp/" target="_blank">株式会社ネットサポート</a>
                 </div>
-                <p class="copyright">Copyright (C) Career Support College. All Right Reserved.</p>
+                <p class="copyright">Copyright &copy; Career Support College. All Right Reserved.</p>
             </div>
             <a class="toTop" href="#"><img src="images/totop.png" alt=""></a>
         </footer>
     </div>
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="http://www.n-support.jp/assets/js/particles.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
