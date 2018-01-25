@@ -185,7 +185,7 @@
         .sms_main {
             left: 0;
             right: 0;
-            bottom: 5px;
+            bottom: 10px;
             display: flex;
             justify-content: center;
             a {
@@ -216,7 +216,7 @@
             .fs_40_sp {
                 font-size: 5.3vw;
                 display: block;
-                padding-bottom: 3vw;
+                padding-bottom: 2vw;
             }
         }
         .btn_main_poster {
@@ -231,7 +231,7 @@
                 width: 100%;
                 height: inherit;
                 padding: 15px;
-                margin-bottom: 3%;
+                margin: 0 8% 2% 8%;
                 border: 1px solid $color-a;
                 border-radius: 50px;
                 &:after {
