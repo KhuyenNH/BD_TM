@@ -38,7 +38,6 @@
     }
 }
 @media screen and (max-width: 1200px) {
-
     #header {
         font-size: 3.5vw;
         &.active {
@@ -55,8 +54,8 @@
             width: 100%;
         }
         .nav_main {
-            // font-size: 4.8vw;
-            font-size: 24px;
+            font-size: 5.2vw;
+            // font-size: 24px;
             color: $color-a;
             flex-wrap: wrap;
             width: 100%;
@@ -101,10 +100,12 @@
             span {
                 transition: 400ms;
                 display: block;
-                background: $blue_bg;
+                background: #2698e1;
                 height: 5px;
                 width: 100%;
-                margin-bottom: 10px;
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
             }
             &.active {
                 span {
@@ -119,6 +120,9 @@
                         transform: translateY(-14px) rotate(45deg);
                     }
                 }
+            }
+            &:hover {
+                opacity: 1;
             }
         }
     }
@@ -177,15 +181,36 @@
             }
         }
     }
+    /*------------- Header -------------*/
+    #header {
+        .logo {
+            a {
+                width: 50%;
+            }
+        }
+        #btn_toggle {
+        }
+        .items_nav a {
+            padding: 12px 0;
+        }
+        .items_btn_nav {
+            .sms_footer {
+                margin-top: 20px;
+            }
+        }
+    }
     /*------------- local_01 -------------*/
     #local_01 {
+        .description_main {
+            top: -4%;
+        }
         .video_main {
             height: inherit;
         }
         .sms_main {
             left: 0;
             right: 0;
-            bottom: 10px;
+            bottom: 5%;
             display: flex;
             justify-content: center;
             a {
@@ -241,6 +266,9 @@
             .fs_20 {
                 font-size: 5.3vw;
             }
+            .fs_16 {
+                font-size: 4vw;
+            }
         }
     }
     /*------------- local_02 -------------*/
@@ -273,7 +301,7 @@
         padding: 10vw 0;
         .thumbnail {
             text-align: center;
-            width: 20%;
+            width: 35%;
             margin: auto;
             padding-left: 0;
         }
@@ -325,7 +353,7 @@
             line-height: 1.3;
         }
         .img_thumb {
-            width: 35%;
+            width: 70%;
         }
         .listItems {
             .items {
@@ -380,10 +408,10 @@
         .title_description {
             &:after {
                 // top: 33px;
-                top: 75%;
-                right: 5px;
-                width: 30px;
-                height: 46px;
+                top: 45%;
+                right: 0;
+                width: 20%;
+                height: 74%;
                 background-size: 100%;
             }
         }
@@ -475,7 +503,7 @@
         .thumbnail {
             padding-top: 0;
             margin: auto;
-            width: 50%;
+            width: 70%;
             text-align: center;
         }
         .description {
@@ -491,8 +519,40 @@
             }
             .tel {
                 width: 55%;
+                font-size: 4vw;
+                line-height: 1.3;
+            }
+            .number_phone {
+                display: block;
+                font-size: 6vw;
+                img {
+                    width: 11%;
+                }
             }
         }
+    }
+    .scrollbar {
+        height: 300px;
+    }
+    #entry_form_local_01 {
+        input[type="text"] {
+            max-width: 100%;
+        }
+        .content_form {
+            padding-top: 30px;
+        }
+    }
+
+    .checkbox_group_main {
+        flex-direction: column;
+    }
+    .checkbox_group {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    .checkbox_group input[type=radio] + label:before {
+        margin-right: 20px;
     }
     /*------------- Footer -------------*/
     #footer {
@@ -501,6 +561,29 @@
     }
     .toTop {
         right: 3%;
-        bottom: 3%;
+        bottom: 8%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #local_01 {
+        .description_main {
+            top: -3.5%;
+        }
+        .sms_main {
+            bottom: 4%;
+            a {
+                margin: 0;
+            }
+            img {
+                padding: 10%
+                // width: 70%;
+            }
+        }
+        .btn_main_poster {
+            a {
+                padding: 8px;
+            }
+        }
     }
 }

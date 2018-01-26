@@ -186,6 +186,64 @@ button:focus, input:focus, a:focus {
 }
 
 /*------------------- List -------------------*/
+.checkbox_group_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.checkbox_group input[type=radio] {
+  display: none;
+}
+
+.checkbox_group input[type=radio] + label:before {
+  display: inline-block;
+  content: "";
+  letter-spacing: 10px;
+  background: url("../images/check_off.png");
+  width: 24px;
+  height: 24px;
+  background-size: 100%;
+  margin-right: 2px;
+  position: relative;
+  top: 6px;
+}
+
+.checkbox_group input[type=radio]:checked + label:before {
+  content: "";
+  background: url("../images/check_on.png");
+  letter-spacing: 5px;
+  width: 24px;
+  height: 24px;
+  background-size: 100%;
+}
+
+.box_scroll {
+  border: 1px solid #eae7e7;
+  padding: 10px;
+}
+
+.scrollbar {
+  height: 194px;
+  overflow-y: scroll;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #7c7c7c;
+}
+
 /* Header
 -------------------------------------*/
 #header {
@@ -390,15 +448,6 @@ button:focus, input:focus, a:focus {
 
 #local_01 video {
   min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 #local_01 .sms_main {
@@ -544,10 +593,6 @@ button:focus, input:focus, a:focus {
 #local_04 .thumbnail {
   text-align: center;
   width: 42%;
-}
-
-#local_04 .thumbnail img {
-  width: 70%;
 }
 
 #local_04 .description {
@@ -757,10 +802,11 @@ button:focus, input:focus, a:focus {
   content: "";
   position: absolute;
   top: 0;
-  right: 20px;
-  width: 106px;
-  height: 164px;
-  background: url("../images/man_icon.png") no-repeat;
+  right: 0px;
+  width: 180px;
+  height: 180px;
+  background: url("../images/voice.gif") no-repeat bottom;
+  background-size: 100%;
 }
 
 #local_07 h5 {
@@ -1018,6 +1064,126 @@ button:focus, input:focus, a:focus {
   margin-right: 10px;
 }
 
+/* entry_form_local_01
+-------------------------------------*/
+#entry_form_local_01 {
+  position: relative;
+  color: #0a2232;
+  padding: 60px 0 100px;
+  font-size: 16px;
+}
+
+#entry_form_local_01 #background_poly_entry {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#entry_form_local_01 .container {
+  max-width: 800px;
+}
+
+#entry_form_local_01 .content_form {
+  padding-top: 65px;
+}
+
+#entry_form_local_01 .title_h2 {
+  padding-bottom: 20px;
+}
+
+#entry_form_local_01 .title_h4 {
+  color: #0a2232;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+#entry_form_local_01 .require {
+  margin-left: 5px;
+}
+
+#entry_form_local_01 .error_text {
+  padding-top: 10px;
+  font-size: 12px;
+  color: #ff4f4f;
+}
+
+#entry_form_local_01 .row_input {
+  margin-top: 35px;
+}
+
+#entry_form_local_01 .row_note {
+  margin-top: 30px;
+  min-height: 194px;
+}
+
+#entry_form_local_01 .row_note .title_h4 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+#entry_form_local_01 .row_note .text {
+  padding: 6px 50px 0px 19px;
+}
+
+#entry_form_local_01 .row_note .text p {
+  margin-bottom: 30px;
+}
+
+#entry_form_local_01 input[type="text"] {
+  max-width: 500px;
+  width: 100%;
+  border: 1px solid #eae7e7;
+  font-size: 16px;
+  padding: 12px 19px;
+  background: #edeff2;
+  color: #898989;
+}
+
+#entry_form_local_01 input[type="text"].inline {
+  margin-right: 10px;
+  width: 106px;
+  display: inline-block;
+}
+
+#entry_form_local_01 input[type="text"]:focus {
+  background: #fff;
+  border: 1px solid #eae7e7;
+  color: #0a2232;
+}
+
+#entry_form_local_01 input[type="text"].error_input {
+  background: #ffeeee;
+  border: 2px solid #ff4f4f;
+}
+
+#entry_form_local_01 input[type="text"].error_input:focus {
+  background: #ffeeee;
+  border: 2px solid #ff4f4f;
+  color: #ff4f4f;
+}
+
+#entry_form_local_01 textarea {
+  margin-top: 10px;
+  width: 100%;
+  min-height: 200px;
+  background: #edeff2;
+  border: 1px solid #edeff2;
+  resize: none;
+}
+
+#entry_form_local_01 .btn_submit {
+  text-align: center;
+  margin-top: 80px;
+}
+
+#entry_form_local_01 .btn_submit button {
+  cursor: pointer;
+  border: 0;
+  background: none;
+}
+
 /* Footer
 -------------------------------------*/
 #footer {
@@ -1152,7 +1318,7 @@ button:focus, input:focus, a:focus {
     width: 100%;
   }
   #header .nav_main {
-    font-size: 24px;
+    font-size: 5.2vw;
     color: #ffffff;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -1205,9 +1371,11 @@ button:focus, input:focus, a:focus {
     -o-transition: 400ms;
     transition: 400ms;
     display: block;
-    background: #2bc1ff;
+    background: #2698e1;
     height: 5px;
     width: 100%;
+  }
+  #header #btn_toggle span:not(:last-child) {
     margin-bottom: 10px;
   }
   #header #btn_toggle.active span {
@@ -1225,6 +1393,9 @@ button:focus, input:focus, a:focus {
     -webkit-transform: translateY(-14px) rotate(45deg);
     -ms-transform: translateY(-14px) rotate(45deg);
     transform: translateY(-14px) rotate(45deg);
+  }
+  #header #btn_toggle:hover {
+    opacity: 1;
   }
 }
 
@@ -1273,14 +1444,27 @@ button:focus, input:focus, a:focus {
   .btn .btn_small a:last-child {
     padding-left: 5px;
   }
+  /*------------- Header -------------*/
+  #header .logo a {
+    width: 50%;
+  }
+  #header .items_nav a {
+    padding: 12px 0;
+  }
+  #header .items_btn_nav .sms_footer {
+    margin-top: 20px;
+  }
   /*------------- local_01 -------------*/
+  #local_01 .description_main {
+    top: -4%;
+  }
   #local_01 .video_main {
     height: inherit;
   }
   #local_01 .sms_main {
     left: 0;
     right: 0;
-    bottom: 10px;
+    bottom: 5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1340,6 +1524,9 @@ button:focus, input:focus, a:focus {
   #local_01 .btn_main_poster .fs_20 {
     font-size: 5.3vw;
   }
+  #local_01 .btn_main_poster .fs_16 {
+    font-size: 4vw;
+  }
   /*------------- local_02 -------------*/
   #local_02 {
     padding: 10vw 0;
@@ -1370,7 +1557,7 @@ button:focus, input:focus, a:focus {
   }
   #local_04 .thumbnail {
     text-align: center;
-    width: 20%;
+    width: 35%;
     margin: auto;
     padding-left: 0;
   }
@@ -1415,7 +1602,7 @@ button:focus, input:focus, a:focus {
     line-height: 1.3;
   }
   #local_06 .img_thumb {
-    width: 35%;
+    width: 70%;
   }
   #local_06 .listItems .items {
     padding-bottom: 10px;
@@ -1460,10 +1647,10 @@ button:focus, input:focus, a:focus {
     padding-left: 0;
   }
   #local_07 .title_description:after {
-    top: 75%;
-    right: 5px;
-    width: 30px;
-    height: 46px;
+    top: 45%;
+    right: 0;
+    width: 20%;
+    height: 74%;
     background-size: 100%;
   }
   #local_07 h5 {
@@ -1553,7 +1740,7 @@ button:focus, input:focus, a:focus {
   #local_10 .thumbnail {
     padding-top: 0;
     margin: auto;
-    width: 50%;
+    width: 70%;
     text-align: center;
   }
   #local_10 .description {
@@ -1570,6 +1757,36 @@ button:focus, input:focus, a:focus {
   }
   #local_10 .description_contact .tel {
     width: 55%;
+    font-size: 4vw;
+    line-height: 1.3;
+  }
+  #local_10 .description_contact .number_phone {
+    display: block;
+    font-size: 6vw;
+  }
+  #local_10 .description_contact .number_phone img {
+    width: 11%;
+  }
+  .scrollbar {
+    height: 300px;
+  }
+  #entry_form_local_01 input[type="text"] {
+    max-width: 100%;
+  }
+  #entry_form_local_01 .content_form {
+    padding-top: 30px;
+  }
+  .checkbox_group_main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .checkbox_group:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .checkbox_group input[type=radio] + label:before {
+    margin-right: 20px;
   }
   /*------------- Footer -------------*/
   #footer {
@@ -1578,6 +1795,24 @@ button:focus, input:focus, a:focus {
   }
   .toTop {
     right: 3%;
-    bottom: 3%;
+    bottom: 8%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #local_01 .description_main {
+    top: -3.5%;
+  }
+  #local_01 .sms_main {
+    bottom: 4%;
+  }
+  #local_01 .sms_main a {
+    margin: 0;
+  }
+  #local_01 .sms_main img {
+    padding: 10%;
+  }
+  #local_01 .btn_main_poster a {
+    padding: 8px;
   }
 }

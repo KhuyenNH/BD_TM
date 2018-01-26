@@ -79,11 +79,62 @@
     // font-size:
     // color:
 }
-
 /*------------------- List -------------------*/
 .listItems {
     @extend %clearfix;
     // .items {
     //     float: left;
     // }
+}
+.checkbox_group_main {
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox_group {
+    input[type=radio] {
+        display: none;
+        + label:before {
+            display: inline-block;
+            content: "";
+            letter-spacing: 10px;
+            background: url('../images/check_off.png');
+            width: 24px;
+            height: 24px;
+            background-size: 100%;
+            margin-right: 2px;
+            position: relative;
+            top: 6px;
+        }
+        &:checked {
+            + label:before {
+                content: "";
+                background: url('../images/check_on.png');
+                letter-spacing: 5px;
+                width: 24px;
+                height: 24px;
+                background-size: 100%;
+            }
+        }
+    }
+}
+
+.box_scroll {
+    border: 1px solid #eae7e7;
+    padding: 10px;
+}
+.scrollbar {
+	height: 194px;
+	overflow-y: scroll;
+}
+.scrollbar::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar {
+	width: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #7c7c7c;
 }
