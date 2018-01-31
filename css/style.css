@@ -137,7 +137,7 @@ button:focus, input:focus, a:focus {
 }
 
 .title_h4 {
-  font-size: 23px;
+  font-size: 24px;
   line-height: 1.4;
   color: #0958ba;
   font-weight: bold;
@@ -380,6 +380,7 @@ button:focus, input:focus, a:focus {
 #local_01 .text_visual_main {
   color: #ffffff;
   font-weight: bold;
+  margin-bottom: 4%;
   max-width: 75%;
 }
 
@@ -403,51 +404,20 @@ button:focus, input:focus, a:focus {
 
 #local_01 .btn_main_poster {
   max-width: 100%;
-  margin-top: 4%;
-  display: table;
 }
 
 #local_01 .btn_main_poster a {
   color: #ffffff;
   padding: 0 10px;
   margin: auto;
-  margin: 0 58px;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  width: 14vw;
-  height: 14vw;
-  border-radius: 50%;
-  border: 1vw solid transparent;
-  font-size: 1.8vw;
+  margin: 0 10px;
   font-weight: bold;
   position: relative;
 }
 
-#local_01 .btn_main_poster a:after {
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  z-index: 9;
-  position: absolute;
-  border: 1px solid #ffffff;
-  border-radius: 50%;
-}
-
-#local_01 .btn_main_poster .fs_16 {
-  font-size: 0.9vw;
-  font-weight: normal;
-}
-
-#local_01 .btn_main_poster .fs_20 {
-  font-size: 1.4vw;
-}
-
 #local_01 video {
   min-width: 100%;
+  min-height: 100%;
 }
 
 #local_01 .sms_main {
@@ -475,7 +445,7 @@ button:focus, input:focus, a:focus {
 
 #local_02 .title_h4 {
   text-align: center;
-  font-size: 28px;
+  font-size: 32px;
   padding-top: 15px;
 }
 
@@ -489,7 +459,7 @@ button:focus, input:focus, a:focus {
 }
 
 #local_02 .list_thumbnail {
-  padding-top: 50px;
+  padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -573,13 +543,13 @@ button:focus, input:focus, a:focus {
 -------------------------------------*/
 #local_04 {
   background: #2698e1;
-  padding: 68px 0 78px;
+  padding: 78px 0 78px;
   color: #ffffff;
 }
 
 #local_04 .title_h3 {
   color: #ffffff;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 #local_04 .container_box {
@@ -716,33 +686,25 @@ button:focus, input:focus, a:focus {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-bottom: 75px;
+  padding-bottom: 55px;
 }
 
 #local_06 .listItems .items.reverse .description {
   padding-left: 0;
-  padding-right: 60px;
+  padding-right: 50px;
 }
 
 #local_06 .listItems .items:first-child .img_thumb {
   padding-top: 21px;
 }
 
-#local_06 .listItems .items:nth-child(3) .thumbnail {
-  width: 41%;
-}
-
-#local_06 .listItems .items:nth-child(3) .description {
-  width: 59%;
-}
-
 #local_06 .thumbnail {
-  width: 40%;
+  width: 41%;
 }
 
 #local_06 .description {
   padding-left: 60px;
-  width: 60%;
+  width: 59%;
 }
 
 /* #local_07
@@ -882,7 +844,7 @@ button:focus, input:focus, a:focus {
 #local_08 .items.user_right {
   position: relative;
   margin-right: 70px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 #local_08 .items.user_right .description_chat {
@@ -955,7 +917,6 @@ button:focus, input:focus, a:focus {
   display: -ms-flexbox;
   display: flex;
   font-size: 16px;
-  line-height: 1.4;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
@@ -976,6 +937,7 @@ button:focus, input:focus, a:focus {
 }
 
 #local_09 .description {
+  line-height: 1.4;
   width: 40%;
 }
 
@@ -1266,6 +1228,10 @@ button:focus, input:focus, a:focus {
   border: 0 !important;
 }
 
+.letter_03 {
+  letter-spacing: -0.03em;
+}
+
 /*-----------------------
         Responsive for device
 -----------------------------------------*/
@@ -1285,10 +1251,6 @@ button:focus, input:focus, a:focus {
   }
   #local_01 .description_main {
     margin: auto;
-  }
-  #local_01 .btn_main_poster a {
-    width: 20vw;
-    height: 20vw;
   }
   #local_05 .listItems {
     margin: 0;
@@ -1421,6 +1383,12 @@ button:focus, input:focus, a:focus {
   .title_h3 span {
     font-size: 3.5vw;
   }
+  .title_h4 {
+    font-size: 4vw;
+  }
+  .title_h4 span {
+    font-size: 3.5vw;
+  }
   .text {
     font-size: 3.7vw;
   }
@@ -1477,9 +1445,12 @@ button:focus, input:focus, a:focus {
   }
   #local_01 .text_visual_main {
     max-width: 85%;
+    margin-bottom: 3%;
   }
   #local_01 .text_visual_main h2 {
+    line-height: 1.2;
     font-size: 9vw;
+    padding: 1.5vw 0;
   }
   #local_01 .text_visual_main h5 {
     padding: 10px 30px;
@@ -1496,30 +1467,11 @@ button:focus, input:focus, a:focus {
     display: block;
     padding-bottom: 2vw;
   }
-  #local_01 .btn_main_poster {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 100%;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-top: 5%;
-  }
   #local_01 .btn_main_poster a {
-    font-size: 5.3vw;
     display: block;
     width: 100%;
-    height: inherit;
-    padding: 15px;
-    margin: 0 8% 2% 8%;
-    border: 1px solid #ffffff;
-    border-radius: 50px;
-  }
-  #local_01 .btn_main_poster a:after {
-    display: none;
+    margin: 3% auto;
+    padding: 0 8%;
   }
   #local_01 .btn_main_poster .fs_20 {
     font-size: 5.3vw;
@@ -1533,6 +1485,12 @@ button:focus, input:focus, a:focus {
   }
   #local_02 .text {
     text-align: justify;
+  }
+  #local_02 .title_h4 {
+    font-size: 4.5vw;
+  }
+  #local_02 .title_h4 span {
+    font-size: 4vw;
   }
   #local_02 .list_thumbnail {
     padding-top: 10vw;
@@ -1610,12 +1568,6 @@ button:focus, input:focus, a:focus {
   #local_06 .listItems .items.reverse .description {
     padding-right: 0;
     padding-bottom: 20px;
-  }
-  #local_06 .listItems .items:nth-child(3) .thumbnail {
-    width: 100%;
-  }
-  #local_06 .listItems .items:nth-child(3) .description {
-    width: 100%;
   }
   #local_06 .thumbnail {
     width: 100%;
@@ -1803,6 +1755,15 @@ button:focus, input:focus, a:focus {
   #local_01 .description_main {
     top: -3.5%;
   }
+  #local_01 .text_visual_main {
+    margin-bottom: 0;
+  }
+  #local_01 .text_visual_main h3 {
+    padding-bottom: 10px;
+  }
+  #local_01 .text_visual_main h5 {
+    padding: 5px 15px;
+  }
   #local_01 .sms_main {
     bottom: 4%;
   }
@@ -1811,8 +1772,5 @@ button:focus, input:focus, a:focus {
   }
   #local_01 .sms_main img {
     padding: 10%;
-  }
-  #local_01 .btn_main_poster a {
-    padding: 8px;
   }
 }

@@ -1,16 +1,16 @@
-var widthBr = $(window).width();
-$(window).on('resize', function() {
-    var win = $(this);
-    if (win.width() < 768) {
-        $('img').each(function() {
-            $(this).attr("src", $(this).attr("src").replace('_pc', '_sp'));
-        });
-    } else {
-        $('img').each(function() {
-            $(this).attr("src", $(this).attr("src").replace('_sp', '_pc'));
-        });
-    }
-})
+// var widthBr = $(window).width();
+// $(window).on('resize', function() {
+//     var win = $(this);
+//     if (win.width() < 768) {
+//         $('img').each(function() {
+//             $(this).attr("src", $(this).attr("src").replace('_pc', '_sp'));
+//         });
+//     } else {
+//         $('img').each(function() {
+//             $(this).attr("src", $(this).attr("src").replace('_sp', '_pc'));
+//         });
+//     }
+// })
 
 $(document).ready(function() {
     /* Scroll on Top

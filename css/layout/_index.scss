@@ -20,6 +20,7 @@
     .text_visual_main {
         color: $color-a;
         font-weight: bold;
+        margin-bottom: 4%;
         max-width: 75%;
         h2 {
             font-size: 56px;
@@ -41,47 +42,47 @@
     .btn_main_poster {
         // display: flex;
         max-width: 100%;
-        margin-top: 4%;
-        display: table;
+        // display: table;
         a {
             color: $color-a;
             padding: 0 10px;
             margin: auto;
-            margin: 0 58px;
-            text-align: center;
-            display: table-cell;
-            vertical-align: middle;
-            width: 14vw;
-            height: 14vw;
-            border-radius: 50%;
-            border: 1vw solid transparent;
-            font-size: 1.8vw;
+            margin: 0 10px;
+            // margin: 0 58px;
+            // text-align: center;
+            // display: table-cell;
+            // vertical-align: middle;
+            // width: 14vw;
+            // height: 14vw;
+            // border-radius: 50%;
+            // border: 1vw solid transparent;
+            // font-size: 1.8vw;
             font-weight: bold;
             position: relative;
-            &:after {
-                content: "";
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                display: block;
-                z-index: 9;
-                position: absolute;
-                border: 1px solid $color-a;
-                border-radius: 50%;
-            }
+            // &:after {
+            //     content: "";
+            //     top: 0;
+            //     left: 0;
+            //     right: 0;
+            //     bottom: 0;
+            //     display: block;
+            //     z-index: 9;
+            //     position: absolute;
+            //     border: 1px solid $color-a;
+            //     border-radius: 50%;
+            // }
         }
-        .fs_16 {
-            font-size: 0.9vw;
-            font-weight: normal;
-        }
-        .fs_20 {
-            font-size: 1.4vw;
-        }
+        // .fs_16 {
+        //     font-size: 0.9vw;
+        //     font-weight: normal;
+        // }
+        // .fs_20 {
+        //     font-size: 1.4vw;
+        // }
     }
     video {
         min-width: 100%;
-        // min-height: 100%;
+        min-height: 100%;
         // width: auto;
         // height: auto;
         // position: absolute;
@@ -111,7 +112,7 @@
     }
     .title_h4 {
         text-align: center;
-        font-size: 28px;
+        font-size: 32px;
         padding-top: 15px;
         span {
             font-size: 24px;
@@ -122,7 +123,7 @@
         line-height: 1.5;
     }
     .list_thumbnail {
-        padding-top: 50px;
+        padding-top: 30px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -184,10 +185,10 @@
 -------------------------------------*/
 #local_04 {
     background: #2698e1;
-    padding: 68px 0 78px;
+    padding: 78px 0 78px;
     .title_h3 {
         color: $color-a;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
     color: $color-a;
     .container_box {
@@ -304,11 +305,12 @@
         .items {
             display: flex;
             flex-wrap: wrap;
-            padding-bottom: 75px;
+            // padding-bottom: 75px;
+            padding-bottom: 55px;
             &.reverse {
                 .description {
                     padding-left: 0;
-                    padding-right: 60px;
+                    padding-right: 50px;
                 }
             }
             &:first-child {
@@ -316,22 +318,22 @@
                     padding-top: 21px;
                 }
             }
-            &:nth-child(3) {
-                .thumbnail {
-                    width: 41%;
-                }
-                .description {
-                    width: 59%;
-                }
-            }
+            // &:nth-child(3) {
+            //     .thumbnail {
+            //         width: 41%;
+            //     }
+            //     .description {
+            //         width: 59%;
+            //     }
+            // }
         }
     }
     .thumbnail {
-        width: 40%;
+        width: 41%;
     }
     .description {
         padding-left: 60px;
-        width: 60%;
+        width: 59%;
     }
 }
 /* #local_07
@@ -453,7 +455,7 @@
         &.user_right {
             position: relative;
             margin-right: 70px;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
             .description_chat {
                 border-radius: 50px;
                 color: $color-a;
@@ -517,7 +519,6 @@
     .content_map {
         display: flex;
         font-size: 16px;
-        line-height: 1.4;
         align-items: flex-end;
     }
     .title_h2 {
@@ -532,6 +533,7 @@
         height: 400px;
     }
     .description {
+        line-height: 1.4;
         width: 40%;
         p {
             padding-bottom: 20px;
