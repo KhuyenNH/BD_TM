@@ -24,12 +24,12 @@
             img {
             }
         }
-        // .btn_main_poster {
-        //     a {
-        //         width: 20vw;
-        //         height: 20vw;
-        //     }
-        // }
+        .btn_main_poster {
+            a {
+                width: 20vw;
+                height: 20vw;
+            }
+        }
     }
     #local_05 {
         .listItems {
@@ -254,22 +254,22 @@
             }
         }
         .btn_main_poster {
-            // display: flex;
-            // max-width: 100%;
-            // justify-content: flex-start;
-            // flex-wrap: wrap;
-            // margin-top: 3%;
+            display: flex;
+            max-width: 100%;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin-top: 5%;
             a {
-                // font-size: 5.3vw;
+                font-size: 5.3vw;
                 display: block;
                 width: 100%;
                 margin: 3% auto;
                 padding: 0 8%;
-                // height: inherit;
-                // padding: 15px;
-                // margin: 0 8% 2% 8%;
-                // border: 1px solid $color-a;
-                // border-radius: 50px;
+                height: inherit;
+                padding: 15px;
+                margin: 0 8% 2% 8%;
+                border: 1px solid $color-a;
+                border-radius: 50px;
                 // &:after {
                 //     display: none;
                 // }

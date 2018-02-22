@@ -20,7 +20,7 @@
     .text_visual_main {
         color: $color-a;
         font-weight: bold;
-        margin-bottom: 4%;
+        // margin-bottom: 4%;
         max-width: 75%;
         h2 {
             font-size: 56px;
@@ -42,21 +42,25 @@
     .btn_main_poster {
         // display: flex;
         max-width: 100%;
-        // display: table;
+        display: table;
+        margin-top: 4%;
+        border-collapse: separate;
+        border-spacing: 20px 0;
         a {
             color: $color-a;
             padding: 0 10px;
             margin: auto;
             margin: 0 10px;
-            // margin: 0 58px;
-            // text-align: center;
-            // display: table-cell;
-            // vertical-align: middle;
-            // width: 14vw;
-            // height: 14vw;
-            // border-radius: 50%;
+            margin: 0 58px;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+            width: 14vw;
+            height: 14vw;
+            border-radius: 50%;
+            border: 1px solid $color-a;
             // border: 1vw solid transparent;
-            // font-size: 1.8vw;
+            font-size: 1.8vw;
             font-weight: bold;
             position: relative;
             // &:after {
@@ -67,28 +71,28 @@
             //     bottom: 0;
             //     display: block;
             //     z-index: 9;
-            //     position: absolute;
             //     border: 1px solid $color-a;
+            //     position: absolute;
             //     border-radius: 50%;
             // }
         }
-        // .fs_16 {
-        //     font-size: 0.9vw;
-        //     font-weight: normal;
-        // }
-        // .fs_20 {
-        //     font-size: 1.4vw;
-        // }
+        .fs_16 {
+            font-size: 0.9vw;
+            font-weight: normal;
+        }
+        .fs_20 {
+            font-size: 1.4vw;
+        }
     }
     video {
         min-width: 100%;
         min-height: 100%;
-        // width: auto;
-        // height: auto;
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .sms_main {
         position: absolute;

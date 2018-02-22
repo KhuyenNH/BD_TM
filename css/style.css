@@ -380,7 +380,6 @@ button:focus, input:focus, a:focus {
 #local_01 .text_visual_main {
   color: #ffffff;
   font-weight: bold;
-  margin-bottom: 4%;
   max-width: 75%;
 }
 
@@ -404,6 +403,10 @@ button:focus, input:focus, a:focus {
 
 #local_01 .btn_main_poster {
   max-width: 100%;
+  display: table;
+  margin-top: 4%;
+  border-collapse: separate;
+  border-spacing: 20px 0;
 }
 
 #local_01 .btn_main_poster a {
@@ -411,13 +414,39 @@ button:focus, input:focus, a:focus {
   padding: 0 10px;
   margin: auto;
   margin: 0 10px;
+  margin: 0 58px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 14vw;
+  height: 14vw;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  font-size: 1.8vw;
   font-weight: bold;
   position: relative;
+}
+
+#local_01 .btn_main_poster .fs_16 {
+  font-size: 0.9vw;
+  font-weight: normal;
+}
+
+#local_01 .btn_main_poster .fs_20 {
+  font-size: 1.4vw;
 }
 
 #local_01 video {
   min-width: 100%;
   min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #local_01 .sms_main {
@@ -1252,6 +1281,10 @@ button:focus, input:focus, a:focus {
   #local_01 .description_main {
     margin: auto;
   }
+  #local_01 .btn_main_poster a {
+    width: 20vw;
+    height: 20vw;
+  }
   #local_05 .listItems {
     margin: 0;
   }
@@ -1467,11 +1500,29 @@ button:focus, input:focus, a:focus {
     display: block;
     padding-bottom: 2vw;
   }
+  #local_01 .btn_main_poster {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 5%;
+  }
   #local_01 .btn_main_poster a {
+    font-size: 5.3vw;
     display: block;
     width: 100%;
     margin: 3% auto;
     padding: 0 8%;
+    height: inherit;
+    padding: 15px;
+    margin: 0 8% 2% 8%;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
   }
   #local_01 .btn_main_poster .fs_20 {
     font-size: 5.3vw;
